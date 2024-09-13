@@ -145,7 +145,7 @@ function getBook(id) {
 
 //Destructuring
 
-const book = getBook(1);
+const book = getBook(2);
 
 // const title = book.title;
 // const author = book.author;
@@ -154,13 +154,33 @@ const book = getBook(1);
 // console.log(title,author);
 
 // 
-// const {title,author,pages,publicationDate,genres,hasMovieAdaptation} = book;
+const {title,author,pages,publicationDate,genres,hasMovieAdaptation} = book;
 // // console.log(title, author, pages, publicationDate, genres, hasMovieAdaptation);
 // 
 
 // const primaryGenre = genres[0];
 // const secondaryGenre = genres[1];
 
-// const [primaryGenre, secondaryGenre] = genres;
+const [primaryGenre, secondaryGenre] = genres;
 //  console.log(primaryGenre, secondaryGenre);
+// 
+// const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
 
+// // console.log(primaryGenre, secondaryGenre, otherGenres);
+
+// const newGenres = [genres,'epic Fantasy'];
+// newGenres;
+
+// const newGenres = [...genres,'epic Fantasy'];
+// newGenres;
+
+// const updatedBook = {...book, moviePublicationDate: "2015-12-19", pages: 1210};
+// updatedBook;
+
+
+// const summary = `${title} is a book`;
+// summary
+
+// const page = pages> 1000?"over a thousand":"less than a thousand";
+// page;
+// console.log(`The book has ${page} pages`);
